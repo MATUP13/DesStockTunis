@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let url;
             switch(platform) {
                 case 'whatsapp':
-                    url = `https://wa.me/216XXXXXXXXX?text=${encodedMessage}`;
+                    url = `https://wa.me/21646311924?text=${encodedMessage}`;
                     break;
                 case 'messenger':
                     url = `https://m.me/votrepage?text=${encodedMessage}`;
