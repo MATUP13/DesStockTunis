@@ -15,10 +15,14 @@ body {
 nav {
     background: #2c3e50;
     color: white;
-    padding: 1rem 2rem;
+    padding: 2rem 1rem;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .logo {
@@ -74,6 +78,16 @@ nav a {
     position: relative;
     overflow: hidden;
 }
+    transition: all 0.3s ease; /* Pour l'animation */
+    min-height: 150px; /* Hauteur minimale */
+    border-top: 4px solid transparent; /* Préparation bordures colorées */
+}
+
+/* Effets au survol (à ajouter APRÈS le bloc .card) */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 
 .card h3 {
     color: #7f8c8d;
@@ -95,4 +109,16 @@ nav a {
     font-size: 3rem;
     opacity: 0.1;
     color: #2c3e50;
+}
+/* =================== */
+/* BORDURES COLORÉES & ÉTAT ACTIF */
+/* =================== */
+.card:nth-child(1) { border-top-color: #3498db; }
+.card:nth-child(2) { border-top-color: #2ecc71; }
+.card:nth-child(3) { border-top-color: #e74c3c; }
+
+nav a.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
 }
