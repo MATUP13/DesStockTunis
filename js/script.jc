@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     url = `https://wa.me/21646311924?text=${encodedMessage}`;
                     break;
                 case 'messenger':
-                    url = `https://m.me/votrepage?text=${encodedMessage}`;
+                    url = `https://m.me/DesStockTunis?text=${encodedMessage}`;
                     break;
                 case 'instagram':
-                    url = `https://www.instagram.com/direct/t/XXXXXXXXXX/?text=${encodedMessage}`;
+                    url = `https://www.instagram.com/direct/t/553648129/?text=${encodedMessage}`;
                     break;
             }
             
