@@ -3,16 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesStockTunis - Stock Tunisien</title>
+    <title>DesStockTunis - Gestion de Stock</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur DesStockTunis</h1>
-    </header>
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="logo">
+            <i class="fas fa-boxes"></i>
+            <span>DesStockTunis</span>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="#"><i class="fas fa-box-open"></i> Produits</a></li>
+            <li><a href="#"><i class="fas fa-chart-bar"></i> Statistiques</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
     <main>
-        <p>Ce site est en construction. Contenu à venir !</p>
+        <section class="dashboard">
+            <h1><i class="fas fa-tachometer-alt"></i> Tableau de Bord</h1>
+            <div class="cards">
+                <div class="card">
+                    <h3>Produits en Stock</h3>
+                    <p>150</p>
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <div class="card">
+                    <h3>Catégories</h3>
+                    <p>12</p>
+                    <i class="fas fa-tags"></i>
+                </div>
+                <div class="card">
+                    <h3>Alertes</h3>
+                    <p>3</p>
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+            </div>
+        </section>
     </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>
