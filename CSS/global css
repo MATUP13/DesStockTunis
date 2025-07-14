@@ -1,1 +1,115 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover, 
+nav a:focus {
+  background-color: #444;
+  outline: none;
+}
+
+/* ===== LAYOUT STRUCTURE ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+/* ===== BASE BUTTON STYLES ===== */
+button, 
+.btn {
+  background-color: #d11d5d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, 
+button:focus,
+.btn:hover,
+.btn:focus {
+  background-color: #a71a4a;
+  outline: 2px solid #333;
+}
+
+/* ===== FORM BASE STYLES ===== */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+.hidden { display: none !important; }
